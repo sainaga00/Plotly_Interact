@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #706a6a;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.plot-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.plot {
+    flex: 1;
+    max-width: 50%;
+    min-width: 300px;
+    border: 2px solid #ccc;
+    background-color: #6c6060;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#slider-container {
+    margin: 30px auto;
+    padding: 10px;
+    max-width: 400px;
+    background-color: #c9bebe;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+#slider-container label {
+    font-weight: bold;
+    color: #555;
+    width: 80px;
+    text-align: left;
+}
+
+#slider-container input[type="range"] {
+    width: calc(100% - 90px);
+}
+
+#slider-container input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+#slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background-color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#slider-container input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .plot-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plot {
+        max-width: 90%;
+    }
+
+    #slider-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #slider-container {
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    #slider-container label {
+        width: 70px;
+    }
+
+    #slider-container input[type="range"] {
+        width: calc(100% - 80px);
+    }
+
+    .slider-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #slider-container input[type="number"] {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
