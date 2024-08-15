@@ -7,8 +7,6 @@
 - **Interactive Scatter Plot**: Visualize data points and their relationships in an interactive scatter plot.
 - **3D Surface Plot**: Display complex data surfaces with interactive controls for a better understanding of multidimensional data.
 - **Dynamic Sliders**: Adjust plot parameters using sliders with real-time updates.
-- **Custom Range Input**: Set custom ranges for plots and update them interactively.
-- **Minimal Value Computation**: Compute and display the minimum z value from the 3D surface plot.
 
 ## Getting Started
 
